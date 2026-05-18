@@ -513,4 +513,4 @@ frontend/
 
 **Built with ❤️ for B.Tech CSE Minor Project**
 
-Last Updated: January 2024
+Last Updated: January 2026

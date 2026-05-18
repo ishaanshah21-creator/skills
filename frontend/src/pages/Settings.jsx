@@ -91,6 +91,21 @@ export const Settings = () => {
                     <input type="password" placeholder="Enter new password" />
                     <button className={styles.btn}>Update Password</button>
                   </div>
+
+                  <div className={styles.settingItem}>
+                    <h3>Logout</h3>
+                    <p>Sign out of your account</p>
+                    <button 
+                      className={styles.logoutBtn}
+                      onClick={() => {
+                        logout();
+                        navigate('/');
+                        toast.success('Logged out successfully');
+                      }}
+                    >
+                      Logout
+                    </button>
+                  </div>
                 </motion.section>
               )}
 

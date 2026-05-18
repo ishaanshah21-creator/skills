@@ -286,6 +286,22 @@
   cursor: not-allowed;
 }
 
+.logoutBtn {
+  padding: 0.75rem 1.5rem;
+  background: #f97316;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logoutBtn:hover {
+  background: #ea580c;
+  transform: translateY(-2px);
+}
+
 @media (max-width: 1024px) {
   .content {
     margin-left: 200px;

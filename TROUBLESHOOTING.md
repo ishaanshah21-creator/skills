@@ -517,6 +517,6 @@ When reporting issues, include:
 
 ---
 
-**Last Updated**: January 2024
+**Last Updated**: January 2026
 
 **Still stuck?** - Restart your services and try again! 🚀

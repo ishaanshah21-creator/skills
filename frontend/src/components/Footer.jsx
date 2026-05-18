@@ -63,7 +63,7 @@ export const Footer = () => {
         </div>
 
         <div className={styles.bottom}>
-          <p>&copy; 2024 SkillSync. All rights reserved.</p>
+          <p>&copy; 2026 SkillSync. All rights reserved.</p>
           <div className={styles.links}>
             <a href="#privacy">Privacy Policy</a>
             <a href="#terms">Terms of Service</a>

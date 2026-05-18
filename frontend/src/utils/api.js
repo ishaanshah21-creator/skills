@@ -51,4 +51,11 @@ export const requestAPI = {
   deleteRequest: (requestId) => api.delete(`/requests/${requestId}`),
 };
 
+// Message APIs
+export const messageAPI = {
+  sendMessage: (data) => api.post('/messages/send', data),
+  getMessages: (userId) => api.get(`/messages/${userId}`),
+  getConversations: () => api.get('/messages'),
+};
+
 export default api;

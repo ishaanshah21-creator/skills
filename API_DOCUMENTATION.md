@@ -420,7 +420,7 @@ Authorization: Bearer <token>
     "skillRequested": "React",
     "message": "I'd love to learn React from you!",
     "status": "pending",
-    "createdAt": "2024-01-15T10:30:00Z"
+    "createdAt": "2026-01-15T10:30:00Z"
   }
 }
 ```
@@ -466,7 +466,7 @@ GET /requests?status=pending
       "skillRequested": "React",
       "message": "I'd love to learn",
       "status": "pending",
-      "createdAt": "2024-01-15T10:30:00Z"
+      "createdAt": "2026-01-15T10:30:00Z"
     }
   ],
   "count": 5
@@ -653,4 +653,4 @@ GET /users?page=2&limit=20
 
 ---
 
-**Last Updated**: January 2024
+**Last Updated**: January 2026

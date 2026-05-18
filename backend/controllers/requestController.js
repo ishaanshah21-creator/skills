@@ -132,13 +132,13 @@ export const rejectRequest = async (req, res) => {
   try {
     const { requestId } = req.params;
 
-    const request = await Request.findById(requestId);
+    const request = await Request.findById(requestId).populate('sender receiver');
 
     if (!request) {
       return res.status(404).json({ success: false, message: 'Request not found' });
     }
 
-    if (request.receiver.toString() !== req.user._id.toString()) {
+    if (request.receiver._id.toString() !== req.user._id.toString()) {
       return res.status(403).json({ success: false, message: 'Unauthorized' });
     }
 
