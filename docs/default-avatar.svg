@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#e5e7eb"/>
+  
+  <!-- Head -->
+  <circle cx="100" cy="70" r="35" fill="#9ca3af"/>
+  
+  <!-- Body -->
+  <path d="M 70 110 Q 70 105 100 105 Q 130 105 130 110 L 130 170 Q 130 180 100 180 Q 70 180 70 170 Z" fill="#9ca3af"/>
+  
+  <!-- Shirt -->
+  <rect x="75" y="110" width="50" height="35" fill="#3b82f6" rx="3"/>
+</svg>
