@@ -1,0 +1,227 @@
+.mySkillsPage {
+  display: flex;
+  min-height: calc(100vh - 70px);
+  background: #f8fafc;
+}
+
+.content {
+  flex: 1;
+  margin-left: 250px;
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  margin: 0 0 0.5rem 0;
+  color: #0f172a;
+  font-size: 2rem;
+}
+
+.header p {
+  color: #64748b;
+  margin: 0;
+}
+
+.skillsOverview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.skillsCard {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.skillsCard h3 {
+  margin: 0 0 1rem 0;
+  color: #334155;
+  font-size: 0.95rem;
+}
+
+.count {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.levels {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #475569;
+}
+
+.levels span {
+  font-size: 0.9rem;
+}
+
+section {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+  margin-top: 0;
+  color: #0f172a;
+  margin-bottom: 1.5rem;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.skillCard {
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid;
+  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+  transition: all 0.3s ease;
+}
+
+.skillCard.Programming {
+  border-left-color: #3b82f6;
+  background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%);
+}
+
+.skillCard.Design {
+  border-left-color: #8b5cf6;
+  background: linear-gradient(135deg, #faf5ff 0%, #ffffff 100%);
+}
+
+.skillCard.DataScience {
+  border-left-color: #f59e0b;
+  background: linear-gradient(135deg, #fffbeb 0%, #ffffff 100%);
+}
+
+.skillCard.WebDevelopment {
+  border-left-color: #10b981;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+}
+
+.skillCard.MobileDevelopment {
+  border-left-color: #06b6d4;
+  background: linear-gradient(135deg, #f0f9fa 0%, #ffffff 100%);
+}
+
+.skillCard.DevOps {
+  border-left-color: #ef4444;
+  background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+}
+
+.skillCard h3 {
+  margin: 0 0 0.5rem 0;
+  color: #0f172a;
+  font-size: 1.1rem;
+}
+
+.category {
+  margin: 0 0 0.75rem 0;
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badge.Beginner {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.badge.Intermediate {
+  background: #fed7aa;
+  color: #92400e;
+}
+
+.badge.Advanced {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.emptyState {
+  background: white;
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.emptyState p {
+  color: #64748b;
+  margin: 0 0 1rem 0;
+}
+
+.link {
+  display: inline-block;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #1d4ed8;
+}
+
+@media (max-width: 1024px) {
+  .content {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mySkillsPage {
+    flex-direction: column;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 1rem 0;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .skillsOverview {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .skillsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+}

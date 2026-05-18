@@ -1,0 +1,332 @@
+.settingsPage {
+  display: flex;
+  min-height: calc(100vh - 70px);
+  background: #f8fafc;
+}
+
+.content {
+  flex: 1;
+  margin-left: 250px;
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  margin: 0 0 0.5rem 0;
+  color: #0f172a;
+  font-size: 2rem;
+}
+
+.header p {
+  color: #64748b;
+  margin: 0;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 2rem;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tabBtn {
+  padding: 1rem;
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  text-align: left;
+  color: #334155;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tabBtn:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.tabBtn.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+.settingsContent {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.settingsContent section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.settingsContent h2 {
+  margin-top: 0;
+  color: #0f172a;
+  font-size: 1.5rem;
+}
+
+.settingItem {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.settingItem:last-child {
+  border-bottom: none;
+}
+
+.settingItem h3 {
+  margin: 0 0 0.5rem 0;
+  color: #0f172a;
+  font-size: 1rem;
+}
+
+.value {
+  margin: 0.25rem 0;
+  color: #475569;
+  font-weight: 500;
+}
+
+.settingItem small {
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.formGroup label {
+  font-weight: 600;
+  color: #334155;
+}
+
+.formGroup input {
+  padding: 0.75rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.formGroup input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.checkboxGroup {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.checkboxGroup input {
+  margin-top: 2px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.checkboxGroup label {
+  cursor: pointer;
+  flex: 1;
+}
+
+.checkboxGroup strong {
+  display: block;
+  color: #0f172a;
+  margin-bottom: 0.25rem;
+}
+
+.checkboxGroup small {
+  display: block;
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+.dangerZone {
+  background: #fee2e2;
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid #ef4444;
+}
+
+.dangerZone h2 {
+  color: #991b1b;
+  margin-top: 0;
+}
+
+.deleteBtn {
+  padding: 0.75rem 1.5rem;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.deleteBtn:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+}
+
+.deleteConfirmation {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.deleteConfirmation h3 {
+  color: #991b1b;
+  margin: 0;
+}
+
+.deleteConfirmation p {
+  color: #475569;
+  margin: 0;
+}
+
+.deleteConfirmation input {
+  padding: 0.75rem 1rem;
+  border: 2px solid #fee2e2;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+.deleteConfirmation input:focus {
+  outline: none;
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+}
+
+.cancelBtn {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  background: #e2e8f0;
+  color: #334155;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cancelBtn:hover {
+  background: #cbd5e1;
+}
+
+.confirmDeleteBtn {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.confirmDeleteBtn:hover:not(:disabled) {
+  background: #dc2626;
+  transform: translateY(-2px);
+}
+
+.confirmDeleteBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1024px) {
+  .content {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .settingsPage {
+    flex-direction: column;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 1rem 0;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .sidebar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+
+  .tabBtn {
+    font-size: 0.9rem;
+    padding: 0.75rem 0.5rem;
+  }
+
+  .settingsContent {
+    padding: 1.5rem;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,51 @@
+.errorPage {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 100%);
+  padding: 2rem;
+}
+
+.content {
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+}
+
+.content h2 {
+  font-size: 2rem;
+  color: #0f172a;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.content p {
+  color: #64748b;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 30px rgba(37, 99, 235, 0.3);
+}
